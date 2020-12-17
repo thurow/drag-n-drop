@@ -231,6 +231,8 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> implements Drag
                 ? ProjectStatus.Active
                 : ProjectStatus.Finished
         )
+        const listEl = this.element.querySelector('ul')!
+        listEl.classList.remove('droppable')
     }
 
     @autobind
